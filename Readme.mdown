@@ -1,0 +1,19 @@
+Zeus without rails
+==================
+
+Even so [zeus](https://github.com/burke/zeus) is mainly used as a rails
+preloader it can be used for just about any environment which might benefit
+from preloading.
+
+For an example on how to set this up checkout the custom\_plan as well as the
+zeus.json file. In essance zeus forks on every step along the way down to the
+command, to minimize reload effort.
+
+To run this example simple do the following
+
+    $ bundle install --binstubs
+    $ bin/zeus start
+    (in a different terminal)
+    $ zeus rake sth
+
+To keep things simple zeus is installed in the binstubs in this example
